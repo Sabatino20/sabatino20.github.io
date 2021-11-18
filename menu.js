@@ -1,6 +1,6 @@
 // Disabilita lo scroll quando il menu responsive è aperto
-$("#test").change(function () {
-  if ($("#test").is(":checked")) {
+$("#hamburger").change(function () {
+  if ($("#hamburger").is(":checked")) {
     $("body").css("overflow", "hidden");
   } else {
     $("body").css("overflow", "auto");
@@ -9,7 +9,7 @@ $("#test").change(function () {
 
 $(document).ready(function () {
   $(".chiudi").click(function () {
-    $("#test").prop("checked", false);
+    $("#hamburger").prop("checked", false);
     $("body").css("overflow", "auto");
   });
 });
